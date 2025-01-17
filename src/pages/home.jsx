@@ -70,7 +70,7 @@ const Home = () => {
 
   return (
     <div style={styles.container}>
-      <h2 style={styles.title}>欢迎光临</h2>
+      <h2 style={styles.title}>欢迎光临!!</h2>
 
       {!isEditing && roomNumber ? (
         <>

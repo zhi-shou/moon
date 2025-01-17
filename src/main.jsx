@@ -11,6 +11,7 @@ root.render(
   >
     <Routes>
       <Route path="/" element={<App />}>
+        <Route index element={<Home />} replace />
         <Route path="/home" element={<Home />} />
         <Route
           path="*"
