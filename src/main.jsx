@@ -1,14 +1,12 @@
 import { createRoot } from 'react-dom/client';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import App from './App';
 import Home from './pages/home';
 
 const rootElement = document.getElementById('root');
 const root = createRoot(rootElement);
 root.render(
-  <BrowserRouter
-    future={{ v7_startTransition: true, v7_relativeSplatPath: true }}
-  >
+  <HashRouter>
     <Routes>
       <Route path="/" element={<App />}>
         <Route index element={<Home />} replace />
@@ -23,5 +21,5 @@ root.render(
         />
       </Route>
     </Routes>
-  </BrowserRouter>
+  </HashRouter>
 );
