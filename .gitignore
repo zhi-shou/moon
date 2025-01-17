@@ -2,10 +2,10 @@
 /node_modules
 /.pnp
 .pnp.js
+.history
 
 # Testing
 /coverage
-
 # Production
 /dist
 /build
