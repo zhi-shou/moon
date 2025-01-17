@@ -1,13 +1,15 @@
-import React from 'react';
-import Home from './pages/home';
-import { BrowserRouter } from 'react-router-dom'
+import {
+  Outlet,
+} from 'react-router-dom';
+import { GlobalStyle } from './styles/global.styles';
 
-function App() {
+export default function App() {
   return (
-    <BrowserRouter basename="/moon">
-      <Home />
-    </BrowserRouter>
+    <>
+      <GlobalStyle />
+      <div style={{ display: 'flex' }}>
+        <Outlet />
+      </div>
+    </>
   );
 }
-
-export default App;
